@@ -1,10 +1,97 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LexAI – LegalTech przyszłości</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0b0f1a;
+            color: #f1f1f1;
+        }
+        header {
+            background: linear-gradient(90deg, #003366, #336699);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #132238;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #f1f1f1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #66d9ef;
+        }
+        main {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 60px;
+        }
+        h2 {
+            color: #4fc3f7;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(255,255,255,0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        form {
+            background-color: #1c2a3a;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: none;
+            background-color: #0e1a2b;
+            color: #fff;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4fc3f7;
+            border: none;
+            border-radius: 5px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #66d9ef;
+        }
+        footer {
+            background: linear-gradient(90deg, #003366, #336699);
+            color: white;
+            text-align: center;
+            padding: 30px 10px;
+        }
+    </style>
 </head>
 <body>
 
@@ -14,40 +101,90 @@
 </header>
 
 <nav>
-    <a href="index.html">Strona główna</a>
-    <a href="ai.html">AI w prawie</a>
-    <a href="rozwiazania.html">Ciekawe rozwiązania</a>
-    <a href="plusyminusy.html">Wady i zalety</a>
-    <a href="formularze.html">Formularze</a>
-    <a href="zmiany.html">AI i życie prawnika</a>
-    <a href="ulatwienia.html">Ułatwienia w pracy</a>
+    <a href="#ai">AI w prawie</a>
+    <a href="#rozwiązania">Ciekawe rozwiązania</a>
+    <a href="#plusyminusy">Wady i zalety</a>
+    <a href="#zmiany">Zmiany w zawodzie</a>
+    <a href="#ulatwienia">Ułatwienia dla prawników</a>
+    <a href="#podsumowanie">Podsumowanie</a>
+    <a href="#formularz">Formularz</a>
 </nav>
 
 <main>
-    <section>
-        <h2>Witaj w LexAI</h2>
-        <p>LegalTech to dynamicznie rozwijająca się dziedzina łącząca prawo z nowoczesnymi technologiami. 
-        Nasza strona prezentuje możliwości wykorzystania sztucznej inteligencji (AI) w zawodzie prawnika.</p>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/JMUxmLyrhSk"
-        title="TED-Ed - What is AI?" frameborder="0" allowfullscreen></iframe>
+    <section id="ai">
+        <h2>AI w prawie</h2>
+        <p>Technologie sztucznej inteligencji mają ogromny wpływ na branżę prawniczą. Systemy analityczne, rozpoznawanie wzorców w orzecznictwie, automatyzacja procesów i generowanie dokumentów zmieniają sposób świadczenia usług prawnych.</p>
+        <img src="https://images.unsplash.com/photo-1616571309574-4bb845c79b55" alt="AI w prawie">
+        <iframe src="https://www.youtube.com/embed/l3XzepN03KQ" allowfullscreen></iframe>
     </section>
 
-    <section>
-        <h2>Dlaczego LexAI?</h2>
-        <p>Naszą misją jest edukacja i inspirowanie przedstawicieli zawodów prawniczych do świadomego i efektywnego wykorzystania nowoczesnych narzędzi AI.
-        Dzięki LexAI dowiesz się, jak technologia może wspierać Twoją pracę, poprawić jakość usług prawnych i zwiększyć dostępność prawa dla wszystkich.</p>
-    </section>
-
-    <section>
-        <h2>Co znajdziesz na stronie?</h2>
+    <section id="rozwiązania">
+        <h2>Ciekawe rozwiązania LegalTech</h2>
         <ul>
-            <li>Opisy realnych zastosowań AI w kancelariach</li>
-            <li>Analizy narzędzi LegalTech (ROSS, DoNotPay, Luminance...)</li>
-            <li>Zalety i zagrożenia wynikające z automatyzacji procesów prawnych</li>
-            <li>Formularze kontaktowe i zapotrzebowania na AI</li>
-            <li>Poradniki: jak wdrożyć AI w kancelarii krok po kroku</li>
+            <li>Systemy predykcyjne oceniające szanse powodzenia w sprawie sądowej.</li>
+            <li>Chatboty prawne świadczące podstawowe porady 24/7.</li>
+            <li>Automatyzacja umów – generowanie dokumentów dopasowanych do sytuacji klienta.</li>
+            <li>Wyszukiwarki orzeczeń i przepisów wspierane przez AI.</li>
         </ul>
+        <img src="https://images.unsplash.com/photo-1629904853894-8f3d80d4cd7e" alt="LegalTech solutions">
+    </section>
+
+    <section id="plusyminusy">
+        <h2>Wady i zalety wykorzystania AI w prawie</h2>
+        <p><strong>Zalety:</strong></p>
+        <ul>
+            <li>Oszczędność czasu i kosztów.</li>
+            <li>Większa dokładność analizy danych.</li>
+            <li>Stała dostępność narzędzi.</li>
+        </ul>
+        <p><strong>Wady:</strong></p>
+        <ul>
+            <li>Ryzyko błędów algorytmicznych.</li>
+            <li>Problemy z etyką i odpowiedzialnością.</li>
+            <li>Potrzeba nadzoru i weryfikacji wyników.</li>
+        </ul>
+        <iframe src="https://www.youtube.com/embed/5vZ2R9hJSFo" allowfullscreen></iframe>
+    </section>
+
+    <section id="zmiany">
+        <h2>Jak AI zmienia zawód prawnika</h2>
+        <p>Sztuczna inteligencja zmienia sposób, w jaki prawnicy pracują i komunikują się z klientami. Od tradycyjnych porad prawnych przechodzimy do inteligentnych systemów wspierających podejmowanie decyzji.</p>
+        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="AI zmienia zawód prawnika">
+    </section>
+
+    <section id="ulatwienia">
+        <h2>Jakie ułatwienia daje AI prawnikom</h2>
+        <ul>
+            <li><strong>Oszczędność czasu:</strong> szybkie przeszukiwanie aktów prawnych i orzecznictwa.</li>
+            <li><strong>Lepsza organizacja pracy:</strong> systemy wspierające zarządzanie kancelarią.</li>
+            <li><strong>Personalizacja usług:</strong> AI pomaga dopasować usługi do indywidualnych potrzeb klienta.</li>
+            <li><strong>Zwiększenie dokładności:</strong> analiza dokumentów z wykorzystaniem algorytmów uczenia maszynowego.</li>
+            <li><strong>Dostępność:</strong> chatboty i automatyczne odpowiedzi działające 24/7.</li>
+        </ul>
+        <img src="https://images.unsplash.com/photo-1624377632357-168b2eac8b87" alt="Ułatwienia AI dla prawników">
+    </section>
+
+    <section id="podsumowanie">
+        <h2>Podsumowanie – Esej</h2>
+        <p>Sztuczna inteligencja (AI) staje się integralną częścią współczesnego świata prawa. Wraz z rozwojem technologii LegalTech zmienia się nie tylko sposób świadczenia usług prawniczych, ale również sama rola prawnika w społeczeństwie. AI pozwala na automatyzację złożonych procesów, takich jak analiza orzecznictwa, generowanie umów, czy prowadzenie prostych spraw klienta za pomocą chatbotów. Dzięki tym narzędziom możliwe staje się przyspieszenie pracy, zwiększenie jej efektywności i minimalizacja błędów ludzkich.</p>
+        <p>Jednocześnie nie brakuje kontrowersji – algorytmy, mimo swojej precyzji, mogą wprowadzać uprzedzenia, a ich działanie nie zawsze jest przejrzyste. Pojawia się również pytanie o odpowiedzialność za błędy popełniane przez sztuczną inteligencję – czy ponosi ją programista, firma wdrażająca, czy może użytkownik końcowy? Wszystkie te aspekty wskazują na potrzebę ścisłej współpracy prawników z informatykami i twórcami systemów AI. W przyszłości prawnik nie będzie jedynie ekspertem od prawa, lecz również świadomym użytkownikiem nowoczesnych technologii.</p>
+        <p>Dodatkowo warto rozwijać edukację prawną w zakresie nowych technologii. Wiedza o funkcjonowaniu algorytmów, metodach ich testowania czy interpretowania wyników analiz będzie równie ważna jak znajomość przepisów. Dlatego też konieczne jest kształtowanie kompetencji cyfrowych wśród przyszłych prawników, by mogli nie tylko korzystać z AI, ale też weryfikować jej działanie w zgodzie z wartościami prawa i etyki zawodowej.</p>
+    </section>
+
+    <section id="formularz">
+        <h2>Formularz kontaktowy</h2>
+        <form>
+            <label for="name">Imię i nazwisko:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Adres e-mail:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Wiadomość:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br>
+
+            <button type="submit">Wyślij</button>
+        </form>
     </section>
 </main>
 
