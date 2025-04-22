@@ -9,29 +9,30 @@
             font-family: 'Segoe UI', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
-            color: #212529;
+            background-color: #0e1a2b;
+            color: #f1f1f1;
         }
         header {
-            background-color: #0d6efd;
+            background: linear-gradient(90deg, #0d6efd, #6610f2);
             color: white;
             padding: 40px 20px;
             text-align: center;
         }
         nav {
-            background-color: #0a58ca;
+            background-color: #1c2d4a;
             display: flex;
             justify-content: center;
             gap: 30px;
             padding: 15px;
         }
         nav a {
-            color: white;
+            color: #f1f1f1;
             text-decoration: none;
             font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
+            color: #66d9ef;
         }
         main {
             padding: 40px 20px;
@@ -42,12 +43,12 @@
             margin-bottom: 60px;
         }
         h2 {
-            color: #0d6efd;
+            color: #66d9ef;
         }
         img {
             max-width: 100%;
             border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 6px rgba(255,255,255,0.1);
         }
         iframe {
             width: 100%;
@@ -57,9 +58,9 @@
             border-radius: 8px;
         }
         form {
-            background: #fff;
+            background: #1e2d44;
             padding: 20px;
-            border: 1px solid #ced4da;
+            border: 1px solid #3a4d63;
             border-radius: 8px;
         }
         label {
@@ -71,7 +72,9 @@
             padding: 10px;
             margin-top: 5px;
             border-radius: 5px;
-            border: 1px solid #ced4da;
+            border: 1px solid #3a4d63;
+            background-color: #0e1a2b;
+            color: #f1f1f1;
         }
         button {
             background-color: #0d6efd;
@@ -82,8 +85,21 @@
             border-radius: 5px;
             cursor: pointer;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #3a4d63;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #1e2d44;
+        }
         footer {
-            background: #0d6efd;
+            background: linear-gradient(90deg, #0d6efd, #6610f2);
             color: white;
             text-align: center;
             padding: 30px 10px;
@@ -102,159 +118,30 @@
     <a href="#ai">AI w prawie</a>
     <a href="#rozwiązania">Ciekawe rozwiązania</a>
     <a href="#plusyminusy">Wady i zalety</a>
+    <a href="#zmiany">Zmiany w zawodzie</a>
+    <a href="#ulatwienia">Ułatwienia dla prawników</a>
     <a href="#formularze">Formularze</a>
 </nav>
 
 <main>
-    <section id="start">
-        <h2>Witaj w LexAI</h2>
-        <p>LegalTech to dynamicznie rozwijająca się dziedzina łącząca prawo z nowoczesnymi technologiami. 
-        Nasza strona prezentuje możliwości wykorzystania sztucznej inteligencji (AI) w zawodzie prawnika.</p>
-        
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/JMUxmLyrhSk"
-        title="TED-Ed - What is AI?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-        gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- Pozostałe sekcje strony -->
 
+    <section id="zmiany">
+        <h2>Jak AI zmienia zawód prawnika</h2>
+        <p>Sztuczna inteligencja zmienia sposób, w jaki prawnicy pracują i komunikują się z klientami. Od tradycyjnych porad prawnych przechodzimy do inteligentnych systemów wspierających podejmowanie decyzji. Prawnicy stają się coraz bardziej analitykami danych i specjalistami od technologii, a ich rola ewoluuje w stronę doradców strategicznych korzystających z narzędzi LegalTech.</p>
+        <img src="https://images.unsplash.com/photo-1618220179428-22790e71a97f" alt="AI zmienia zawód prawnika">
     </section>
 
-    <section id="ai">
-        <h2>Zastosowanie AI w zawodzie prawnika</h2>
-
-        <h3>1. Analiza dokumentów prawnych</h3>
-        <p>AI może analizować duże ilości umów, regulaminów i dokumentów w kilka sekund. Pozwala to szybciej wykrywać błędy, nieścisłości czy klauzule niedozwolone.</p>
-        <img src="https://images.unsplash.com/photo-1600267165507-967d5a6ed77b" alt="Analiza dokumentów AI">
-
-        <h3>2. Chatboty i obsługa klienta</h3>
-        <p>Inteligentne chatboty wspierają kancelarie 24/7, odpowiadając na pytania klientów, udzielając informacji o dokumentach, terminach i procedurach.</p>
-        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Chatbot w kancelarii">
-
-        <h3>3. Predykcja wyniku spraw</h3>
-        <p>Na podstawie analizy danych z setek podobnych spraw, AI może prognozować prawdopodobieństwo wygrania konkretnej sprawy. To wspiera strategię działania prawnika i jego klienta.</p>
-        <img src="https://images.unsplash.com/photo-1633448222493-f9c8abf24355" alt="Predykcja spraw AI">
-
-        <h3>4. Wsparcie przy RODO i compliance</h3>
-        <p>AI wspiera tworzenie i monitorowanie polityk zgodności z RODO, np. przez analizę ryzyk czy automatyczne aktualizacje polityk prywatności.</p>
-        <img src="https://images.unsplash.com/photo-1625225233840-695456021cde" alt="AI i RODO">
-    
-        <h3>5. Tworzenie inteligentnych umów (smart contracts)</h3>
-        <p>AI w połączeniu z technologią blockchain umożliwia tworzenie samowykonujących się umów – tzw. smart contracts.
-        Dzięki temu można automatyzować zawieranie i realizację umów bez potrzeby pośredników, co znacznie obniża koszty
-        i przyspiesza procesy prawne.</p>
-        <img src="https://images.unsplash.com/photo-1639401781095-4978a6f82aef" alt="Smart contracts i blockchain">
-
-        <h3>6. Automatyzacja tworzenia dokumentów</h3>
-        <p>AI potrafi automatycznie wygenerować dokumenty prawne na podstawie danych wejściowych użytkownika.
-        Wystarczy odpowiedzieć na kilka pytań, a system stworzy gotowy dokument – np. umowę o pracę, NDA czy regulamin sklepu internetowego.
-        To ogromne wsparcie dla mniejszych kancelarii i osób fizycznych, które nie mają dostępu do prawnika na co dzień.</p>
-
-        <h3>7. Wyszukiwanie informacji prawnych</h3>
-        <p>Systemy AI wyposażone w modele językowe potrafią w mgnieniu oka przeszukiwać tysiące stron przepisów, orzecznictwa i komentarzy prawnych,
-        dostarczając konkretnych odpowiedzi na zadane pytania. To rewolucjonizuje sposób, w jaki prawnicy zdobywają wiedzę i argumenty do spraw sądowych.</p>
-
-        <h3>8. Redukcja kosztów i dostępność usług</h3>
-        <p>Automatyzacja procesów prawnych pozwala na znaczne obniżenie kosztów świadczenia usług prawnych. 
-        Dzięki AI, porady prawne stają się bardziej dostępne także dla osób o niższych dochodach, co może wpłynąć na wyrównanie szans obywateli w dostępie do sprawiedliwości.</p>
-
-    </section>
-
-    <section id="rozwiązania">
-        <h2>Ciekawe rozwiązania AI w prawie</h2>
-
-        <h3>ROSS Intelligence</h3>
-        <p>ROSS to inteligentny asystent prawny oparty na IBM Watson, który pomaga prawnikom w szybkim wyszukiwaniu informacji prawnych i przepisów.
-        System odpowiada na pytania w języku naturalnym i dostarcza odpowiedzi w oparciu o aktualne źródła prawa.</p>
-
-        <h3>DoNotPay</h3>
-        <p>To chatbot prawniczy, który pomaga użytkownikom w dochodzeniu praw w codziennych sprawach, takich jak mandaty parkingowe, reklamacje, czy odwołania od decyzji administracyjnych.
-        Użytkownik wchodzi w interakcję z botem, który prowadzi go krok po kroku przez proces.</p>
-
-        <h3>Luminance</h3>
-        <p>Oprogramowanie wykorzystujące uczenie maszynowe do analizy i przeglądania dużej ilości dokumentów w procesie due diligence.
-        Ułatwia to kancelariom prawnym analizę ryzyka przy transakcjach fuzji i przejęć.</p>
-
-        <h3>Legal Robot</h3>
-        <p>Platforma, która analizuje umowy pod kątem zrozumiałości, czytelności oraz porównuje zapisy z praktykami branżowymi.
-        Użytkownicy mogą dzięki temu lepiej zrozumieć dokumenty, które podpisują.</p>
-
-        <h3>Predykcyjne orzecznictwo</h3>
-        <p>Coraz częściej wykorzystywane są modele sztucznej inteligencji do przewidywania wyroków sądowych na podstawie danych statystycznych,
-        co wspiera strategie prawnicze i decyzje klientów.</p>
-
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="AI tools w prawie">
-    </section>
-
-    <section id="plusyminusy">
-        <h2>Wady i zalety zastosowania AI w prawie</h2>
-        <p>Sztuczna inteligencja zmienia sposób, w jaki świadczone są usługi prawne. Jak każda technologia, AI niesie za sobą zarówno korzyści, jak i pewne ryzyka.
-        Poniżej przedstawiamy zestawienie najważniejszych zalet i wad wykorzystania AI w sektorze prawnym:</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Zalety</th>
-                    <th>Wady</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Automatyzacja rutynowych czynności (np. analiza dokumentów)</td>
-                    <td>Ryzyko błędów lub uprzedzeń algorytmicznych</td>
-                </tr>
-                <tr>
-                    <td>Szybsze wyszukiwanie informacji i orzecznictwa</td>
-                    <td>Brak pełnego zrozumienia kontekstu prawnego</td>
-                </tr>
-                <tr>
-                    <td>Obniżenie kosztów usług prawnych</td>
-                    <td>Zagrożenie dla tradycyjnych zawodów prawniczych</td>
-                </tr>
-                <tr>
-                    <td>24/7 dostępność – chatboty i automatyczne odpowiedzi</td>
-                    <td>Problemy z ochroną danych i prywatnością</td>
-                </tr>
-                <tr>
-                    <td>Wsparcie decyzyjne – analiza ryzyka, predykcja wyroków</td>
-                    <td>Brak przejrzystości działania niektórych modeli AI</td>
-                </tr>
-            </tbody>
-        </table>
-        <p>Dalszy rozwój AI w sektorze prawnym wymaga odpowiednich regulacji, które zapewnią bezpieczeństwo, transparentność i etyczność wykorzystywania tej technologii.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/UwsrzCVZAb8" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-        gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
-
-    <section id="formularze">
-        <h2>Formularze interaktywne</h2>
-
-        <h3>Formularz kontaktowy</h3>
-        <form>
-            <label for="name">Imię i nazwisko:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Adres e-mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Wiadomość:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Wyślij</button>
-        </form>
-
-        <h3>Formularz wyboru narzędzi AI</h3>
-        <form>
-            <label for="tool">Wybierz zastosowanie:</label>
-            <select id="tool" name="tool">
-                <option>Analiza dokumentów</option>
-                <option>Chatboty</option>
-                <option>Predykcja spraw</option>
-                <option>RODO i compliance</option>
-            </select>
-
-            <label for="details">Szczegóły zapotrzebowania:</label>
-            <textarea id="details" name="details" rows="4"></textarea>
-
-            <button type="submit">Zgłoś potrzebę</button>
-        </form>
+    <section id="ulatwienia">
+        <h2>Jakie ułatwienia daje AI prawnikom</h2>
+        <ul>
+            <li><strong>Oszczędność czasu:</strong> szybkie przeszukiwanie aktów prawnych i orzecznictwa.</li>
+            <li><strong>Lepsza organizacja pracy:</strong> systemy wspierające zarządzanie kancelarią.</li>
+            <li><strong>Personalizacja usług:</strong> AI pomaga dopasować usługi do indywidualnych potrzeb klienta.</li>
+            <li><strong>Zwiększenie dokładności:</strong> analiza dokumentów z wykorzystaniem algorytmów uczenia maszynowego.</li>
+            <li><strong>Dostępność:</strong> chatboty i automatyczne odpowiedzi działające 24/7.</li>
+        </ul>
+        <img src="https://images.unsplash.com/photo-1632735637842-19db8d593f08" alt="Ułatwienia AI dla prawników">
     </section>
 </main>
 
@@ -264,4 +151,3 @@
 
 </body>
 </html>
-
