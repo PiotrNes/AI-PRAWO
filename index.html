@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LexAI – Sztuczna Inteligencja w Prawie</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f8fb;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #002f5f;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 2em;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 2em;
+    }
+    article {
+      margin-top: 1.5em;
+      background-color: white;
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    form {
+      background-color: white;
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      margin-bottom: 1em;
+      padding: 0.5em;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      background-color: #002f5f;
+      color: white;
+      padding: 0.5em 1em;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      background-color: #002f5f;
+      color: white;
+      padding: 1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LexAI – Sztuczna Inteligencja w Prawie</h1>
+    <nav>
+      <a href="#start">Strona główna</a>
+      <a href="#zastosowania">Zastosowania</a>
+      <a href="#formularze">Formularze</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="start">
+      <h2>Witaj na stronie LexAI</h2>
+      <p>
+        LexAI to projekt edukacyjny pokazujący, jak sztuczna inteligencja zmienia zawód prawnika. 
+        Od chatbotów po analizę umów – LegalTech to przyszłość, która dzieje się już dziś.
+      </p>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/1J8xKaVJ-Og" 
+        title="AI in Law" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="zastosowania">
+      <h2>Zastosowania AI w Prawie</h2>
+
+      <article>
+        <img src="https://images.unsplash.com/photo-1581090700227-1e8e5fdd46b7" alt="Chatbot prawny">
+        <h3>Chatboty prawne</h3>
+        <p>
+          Chatboty oparte na AI pozwalają automatycznie odpowiadać na pytania klientów. 
+          Zmniejszają one koszty obsługi, dostępne są 24/7 i poprawiają doświadczenia klientów kancelarii.
+        </p>
+      </article>
+
+      <article>
+        <img src="https://images.unsplash.com/photo-1584697964404-49ffeb6f88b4" alt="Analiza umów AI">
+        <h3>Analiza umów</h3>
+        <p>
+          Narzędzia NLP (przetwarzania języka naturalnego) umożliwiają szybkie sprawdzanie zapisów w umowach, 
+          wychwytywanie nieścisłości oraz błędów, oszczędzając godziny pracy prawników.
+        </p>
+      </article>
+
+      <article>
+        <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507" alt="Predykcja wyniku spraw">
+        <h3>Predykcja wyniku spraw</h3>
+        <p>
+          Dzięki uczeniu maszynowemu możliwe jest przewidywanie, jaki będzie wynik danej sprawy 
+          na podstawie tysięcy orzeczeń i danych statystycznych.
+        </p>
+      </article>
+    </section>
+
+    <section id="formularze">
+      <h2>Formularze</h2>
+      <article>
+        <h3>Formularz kontaktowy</h3>
+        <form>
+          <label>Imię:<br>
+            <input type="text" name="imie" required>
+          </label><br>
+
+          <label>Email:<br>
+            <input type="email" name="email" required>
+          </label><br>
+
+          <label>Wiadomość:<br>
+            <textarea name="wiadomosc" rows="4" required></textarea>
+          </label><br>
+
+          <input type="submit" value="Wyślij">
+        </form>
+      </article>
+
+      <article>
+        <h3>Jakie narzędzie AI może Ci pomóc?</h3>
+        <form>
+          <p>Wybierz obszary, w których potrzebujesz wsparcia:</p>
+          <label><input type="checkbox" name="obszar" value="dokumenty"> Analiza dokumentów</label><br>
+          <label><input type="checkbox" name="obszar" value="klienci"> Obsługa klientów</label><br>
+          <label><input type="checkbox" name="obszar" value="orzecznictwo"> Analiza orzecznictwa</label><br>
+          <input type="submit" value="Sprawdź">
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LexAI – Projekt LegalTech. Zdjęcia: Unsplash. Film: YouTube.</p>
+  </footer>
+</body>
+</html>
